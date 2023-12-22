@@ -8,23 +8,14 @@ import {
   Button,
   UnorderedList,
   ListItem,
-  ButtonGroup,
   Card,
   CardBody,
-  CardFooter,
-  Divider,
   Stack,
-  Textarea,
-  InputGroup,
-  Input,
-  InputLeftElement,
-  CardHeader,
 } from "@chakra-ui/react";
 import { Banner } from "@src/components/Banner";
 import Contact from "@src/components/Contact/Contact";
 
-export const revalidate = 60; // revalidate this page every 60 seconds
-
+export const revalidate = 60;
 export default async function Home() {
   return (
     <main>
@@ -61,7 +52,7 @@ export default async function Home() {
             The Crisis
           </Heading>
           <Text>
-            More than half of the world's 14.8 million school-aged refugee
+            More than half of the world&apos;s 14.8 million school-aged refugee
             children are missing out on formal education, risking their future
             prosperity and global development goals, according to the 2023 UNHCR
             Refugee Education Report. By the end of 2022, the number of
