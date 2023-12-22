@@ -75,8 +75,8 @@ export default async function Home() {
         >
           <UnorderedList>
             <ListItem mt={10}>
-              Over half of the world's 14.8 million school-aged refugee children
-              lack formal education.
+              Over half of the world&apos;s 14.8 million school-aged refugee
+              children lack formal education.
             </ListItem>
             <ListItem mt={10}>
               The number of school-aged refugees rose by nearly 50% from 10
