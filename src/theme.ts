@@ -3,9 +3,9 @@ import { extendTheme } from '@chakra-ui/react';
 
 export const colors = {
   brand: {
-    primary: '#febe60',
-    primaryLight: '#febe60',
-    primaryDark: '#febe60',
+    primary: '#ffc605',
+    primaryLight: '#ffc605',
+    primaryDark: '#ffc605',
   },
 };
 

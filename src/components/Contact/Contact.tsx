@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
       <Box w={{ base: "100%", lg: "45%" }}>
         <Card borderWidth="1px" borderColor="gray.200" shadow="none" p="2rem">
           <Heading pl="12x" size="xl">
-            Contact Us
+            Get in touch with us
           </Heading>
           <Divider mt="2rem" />
 

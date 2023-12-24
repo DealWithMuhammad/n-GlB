@@ -57,9 +57,9 @@ export default async function Home() {
           </Heading>
           <Box
             mt={5}
-            borderTop={"7px solid #febe60"}
+            borderTop={"7px solid #ffc605"}
             width={20}
-            color={"#febe60"}
+            color={"#ffc605"}
           ></Box>
           <Heading mt={10} mb={4} fontWeight={"medium"} fontSize={"25"}>
             The Crisis
@@ -111,14 +111,14 @@ export default async function Home() {
       <Box mt={10} mx={{ base: "11", md: "16", lg: "14" }} data-aos="fade-up">
         <Box>
           <Heading size={{ base: "2xl", lg: "2xl" }}>ABOUT</Heading>
-          <Heading mt={3} size={{ base: "2xl", lg: "3xl" }} color={"#febe60"}>
+          <Heading mt={3} size={{ base: "2xl", lg: "3xl" }} color={"#ffc605"}>
             Global Learning Bridge
           </Heading>
           <Box
             mt={10}
-            borderTop={"7px solid #febe60"}
+            borderTop={"7px solid #ffc605"}
             width={20}
-            color={"#febe60"}
+            color={"#ffc605"}
           ></Box>
         </Box>
         <Box mx={{ base: "11", md: "16", lg: "14" }}>
@@ -168,7 +168,7 @@ export default async function Home() {
               bgColor="Red"
               border={"1px solid"}
               color="#fff"
-              _hover={{ bgColor: "#febe60", border: "0px solid black" }}
+              _hover={{ bgColor: "#ffc605", border: "0px solid black" }}
             >
               Join Us
             </Button>
@@ -245,7 +245,7 @@ export default async function Home() {
             <Heading pt={10} size={{ base: "2xl", lg: "2xl" }}>
               GLB Initiatives
             </Heading>
-            <Box mt={10} borderTop={"10px solid #febe60"} width={20}></Box>
+            <Box mt={10} borderTop={"10px solid #ffc605"} width={20}></Box>
           </Box>
           {/* Cards */}
           <Flex
@@ -259,7 +259,7 @@ export default async function Home() {
             {/* Card 1 */}
             <Card maxW="sm" data-aos="fade-up">
               <CardBody>
-                <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
+                <Box py={4} textAlign={"center"} bgColor={"#ffc605"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
                     K-12 Education
                   </Heading>
@@ -282,7 +282,7 @@ export default async function Home() {
                     bgColor="Red"
                     border={"1px solid"}
                     color="#fff"
-                    _hover={{ bgColor: "#febe60", border: "0px solid black" }}
+                    _hover={{ bgColor: "#ffc605", border: "0px solid black" }}
                   >
                     Learn More
                   </Button>
@@ -297,7 +297,7 @@ export default async function Home() {
               data-aos="fade-up"
             >
               <CardBody>
-                <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
+                <Box py={4} textAlign={"center"} bgColor={"#ffc605"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
                     High School Equivalency
                   </Heading>
@@ -320,7 +320,7 @@ export default async function Home() {
                     bgColor="Red"
                     border={"1px solid"}
                     color="#fff"
-                    _hover={{ bgColor: "#febe60", border: "0px solid black" }}
+                    _hover={{ bgColor: "#ffc605", border: "0px solid black" }}
                   >
                     Learn More
                   </Button>
@@ -330,7 +330,7 @@ export default async function Home() {
             {/* Card 3 */}
             <Card mb={{ base: 10, lg: 0 }} maxW="sm" data-aos="fade-up">
               <CardBody>
-                <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
+                <Box py={4} textAlign={"center"} bgColor={"#ffc605"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
                     Higher Education
                   </Heading>
@@ -353,7 +353,7 @@ export default async function Home() {
                     bgColor="Red"
                     border={"1px solid"}
                     color="#fff"
-                    _hover={{ bgColor: "#febe60", border: "0px solid black" }}
+                    _hover={{ bgColor: "#ffc605", border: "0px solid black" }}
                   >
                     Learn More
                   </Button>
@@ -363,7 +363,7 @@ export default async function Home() {
             {/* Card 4 */}
             <Card mb={{ base: 10, lg: 0 }} maxW="sm" data-aos="fade-up">
               <CardBody>
-                <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
+                <Box py={4} textAlign={"center"} bgColor={"#ffc605"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
                     Skills Development
                   </Heading>
@@ -386,7 +386,7 @@ export default async function Home() {
                     bgColor="Red"
                     border={"1px solid"}
                     color="#fff"
-                    _hover={{ bgColor: "#febe60", border: "0px solid black" }}
+                    _hover={{ bgColor: "#ffc605", border: "0px solid black" }}
                   >
                     Learn More
                   </Button>
@@ -401,7 +401,7 @@ export default async function Home() {
               maxW="sm"
             >
               <CardBody>
-                <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
+                <Box py={4} textAlign={"center"} bgColor={"#ffc605"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
                     Short Cources
                   </Heading>
@@ -424,7 +424,7 @@ export default async function Home() {
                     bgColor="Red"
                     border={"1px solid"}
                     color="#fff"
-                    _hover={{ bgColor: "#febe60", border: "0px solid black" }}
+                    _hover={{ bgColor: "#ffc605", border: "0px solid black" }}
                   >
                     Learn More
                   </Button>
@@ -434,7 +434,7 @@ export default async function Home() {
             {/* Card 6 */}
             <Card data-aos="fade-up" mb={{ base: 10, lg: 0 }} maxW="sm">
               <CardBody>
-                <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
+                <Box py={4} textAlign={"center"} bgColor={"#ffc605"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
                     Financial Assistance
                   </Heading>
@@ -457,7 +457,7 @@ export default async function Home() {
                     bgColor="Red"
                     border={"1px solid"}
                     color="#fff"
-                    _hover={{ bgColor: "#febe60", border: "0px solid black" }}
+                    _hover={{ bgColor: "#ffc605", border: "0px solid black" }}
                   >
                     Learn More
                   </Button>
