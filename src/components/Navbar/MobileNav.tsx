@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Flex, Stack } from "@chakra-ui/react";
 import { AppLogo } from "../AppLogo";
 import { NavMenu } from "./NavMenu";

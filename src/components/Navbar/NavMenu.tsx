@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   Button,
@@ -11,12 +13,12 @@ import {
   DrawerOverlay,
   Input,
   useDisclosure,
-} from '@chakra-ui/react';
-import { navItems } from '@src/helpers';
-import Link from 'next/link';
-import React, { useRef } from 'react';
-import { VscListFlat } from 'react-icons/vsc';
-import { AppLogo } from '../AppLogo';
+} from "@chakra-ui/react";
+import { navItems } from "@src/helpers";
+import Link from "next/link";
+import React, { useRef } from "react";
+import { VscListFlat } from "react-icons/vsc";
+import { AppLogo } from "../AppLogo";
 
 export const NavMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -46,7 +48,7 @@ export const NavMenu = () => {
               <Link href={navItem.href} key={navItem.label}>
                 <Box
                   p="0.5rem"
-                  _hover={{ bgColor: 'brand.primaryLight', color: 'white' }}
+                  _hover={{ bgColor: "brand.primaryLight", color: "white" }}
                 >
                   {navItem.label}
                 </Box>

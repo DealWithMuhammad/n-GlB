@@ -1,3 +1,5 @@
+"use client";
+
 import { navItems } from "@/helpers";
 import { Box, Flex, Stack } from "@chakra-ui/react";
 import Link from "next/link";
