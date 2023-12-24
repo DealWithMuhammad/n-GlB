@@ -22,7 +22,29 @@ export function DesktopNav() {
         </Box>
 
         {navItems.map((navItem) => (
-          <Box key={navItem.label}>
+          <Box
+            color={"black"}
+            key={navItem.label}
+            position="relative"
+            display="inline"
+            _after={{
+              content: '""',
+              position: "absolute",
+              left: "50%",
+              bottom: "-2px",
+              width: "0",
+              height: "0.7px",
+              background: "red", // Change this color as needed
+              transition: "all 0.45s",
+            }}
+            _hover={{
+              _after: {
+                width: "100%",
+                left: "0",
+              },
+              color: "red",
+            }}
+          >
             <Link href={navItem.href}>{navItem.label}</Link>
           </Box>
         ))}

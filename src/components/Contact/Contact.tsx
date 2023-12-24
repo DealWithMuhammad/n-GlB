@@ -1,6 +1,6 @@
 "use client";
 // Import necessary packages and components
-import React, { useState, ChangeEvent } from "react";
+import React, { useState, ChangeEvent, useEffect } from "react";
 import {
   Box,
   Button,
@@ -22,6 +22,9 @@ import { PhoneIcon } from "@chakra-ui/icons";
 // import { client } from "@utils/sanity.client";
 import { LiaWhatsapp } from "react-icons/lia";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // Define the Contact component
 const Contact: React.FC = () => {
   // State to manage form data
@@ -89,6 +92,13 @@ const Contact: React.FC = () => {
     }));
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
+
   // Render the component
   return (
     <Flex
@@ -96,6 +106,7 @@ const Contact: React.FC = () => {
       mx="auto"
       flexDir={{ base: "column", lg: "row" }}
       gap="2rem"
+      data-aos="fade-up"
     >
       {/* ... your existing JSX code */}
       <Box w={{ base: "100%", lg: "45%" }}>

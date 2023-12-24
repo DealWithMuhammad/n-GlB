@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   Flex,
@@ -14,9 +16,19 @@ import {
 } from "@chakra-ui/react";
 import { Banner } from "@src/components/Banner";
 import Contact from "@src/components/Contact/Contact";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const revalidate = 60;
 export default async function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
+
   return (
     <main>
       <Banner />
@@ -28,6 +40,7 @@ export default async function Home() {
         align="center"
         mx="auto"
         flexDir={{ base: "column", md: "row" }}
+        data-aos="fade-up"
       >
         <Box
           mx={{ base: "11", md: "16", lg: "14" }}
@@ -95,7 +108,7 @@ export default async function Home() {
       </Flex>
       {/* End */}
       {/* Section 2 */}
-      <Box mt={10} mx={{ base: "11", md: "16", lg: "14" }}>
+      <Box mt={10} mx={{ base: "11", md: "16", lg: "14" }} data-aos="fade-up">
         <Box>
           <Heading size={{ base: "2xl", lg: "2xl" }}>ABOUT</Heading>
           <Heading mt={3} size={{ base: "2xl", lg: "3xl" }} color={"#febe60"}>
@@ -193,6 +206,7 @@ export default async function Home() {
             position="relative"
             overflow="hidden"
             maxW={{ base: "500px", md: "400px", lg: "600px" }}
+            data-aos="fade-up"
           >
             <Heading letterSpacing={1} size={{ base: "2xl", lg: "3xl" }}>
               Vision
@@ -210,6 +224,7 @@ export default async function Home() {
             overflow="hidden"
             maxW={{ base: "500px", md: "400px", lg: "600px" }}
             mt={{ base: 10, lg: 0 }}
+            data-aos="fade-up"
           >
             <Heading letterSpacing={1} size={{ base: "2xl", lg: "3xl" }}>
               Mission
@@ -226,7 +241,7 @@ export default async function Home() {
       {/* Section 3 */}
       <Box bgColor={"#e0e0e0"}>
         <Box mx={{ base: "11", md: "16", lg: "10" }}>
-          <Box>
+          <Box data-aos="fade-up">
             <Heading pt={10} size={{ base: "2xl", lg: "2xl" }}>
               GLB Initiatives
             </Heading>
@@ -242,7 +257,7 @@ export default async function Home() {
             flexDir={{ base: "column", md: "row" }}
           >
             {/* Card 1 */}
-            <Card maxW="sm">
+            <Card maxW="sm" data-aos="fade-up">
               <CardBody>
                 <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
@@ -275,7 +290,12 @@ export default async function Home() {
               </CardBody>
             </Card>
             {/* Card 2 */}
-            <Card my={{ base: 10, lg: 10 }} mx={{ base: 0, lg: 3 }} maxW="sm">
+            <Card
+              my={{ base: 10, lg: 10 }}
+              mx={{ base: 0, lg: 3 }}
+              maxW="sm"
+              data-aos="fade-up"
+            >
               <CardBody>
                 <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
@@ -308,7 +328,7 @@ export default async function Home() {
               </CardBody>
             </Card>
             {/* Card 3 */}
-            <Card mb={{ base: 10, lg: 0 }} maxW="sm">
+            <Card mb={{ base: 10, lg: 0 }} maxW="sm" data-aos="fade-up">
               <CardBody>
                 <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
@@ -341,7 +361,7 @@ export default async function Home() {
               </CardBody>
             </Card>
             {/* Card 4 */}
-            <Card mb={{ base: 10, lg: 0 }} maxW="sm">
+            <Card mb={{ base: 10, lg: 0 }} maxW="sm" data-aos="fade-up">
               <CardBody>
                 <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
@@ -374,7 +394,12 @@ export default async function Home() {
               </CardBody>
             </Card>
             {/* Card 5 */}
-            <Card mb={{ base: 10, lg: 0 }} mx={{ base: 0, lg: 3 }} maxW="sm">
+            <Card
+              data-aos="fade-up"
+              mb={{ base: 10, lg: 0 }}
+              mx={{ base: 0, lg: 3 }}
+              maxW="sm"
+            >
               <CardBody>
                 <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
@@ -407,7 +432,7 @@ export default async function Home() {
               </CardBody>
             </Card>
             {/* Card 6 */}
-            <Card mb={{ base: 10, lg: 0 }} maxW="sm">
+            <Card data-aos="fade-up" mb={{ base: 10, lg: 0 }} maxW="sm">
               <CardBody>
                 <Box py={4} textAlign={"center"} bgColor={"#febe60"}>
                   <Heading fontWeight={"400"} color={"#fff"} fontSize={"24px"}>
