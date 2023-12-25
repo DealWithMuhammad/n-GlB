@@ -84,21 +84,21 @@ export const Footer = () => {
           </Stack>
           <Stack align="flex-start">
             <ListHeader>Company</ListHeader>
-            <Link href={"/about"}>About us</Link>
+            <Link href={"/about"}>Why us</Link>
             <Link href={"/contact-us"}>Contact us</Link>
             <Link href={"#"}>Testimonials</Link>
           </Stack>
           <Stack align="flex-start">
             <ListHeader>Support</ListHeader>
-            <Link href={"#"}>Help Center</Link>
+            <Link href={"#"}>Service</Link>
             <Link href={"#"}>Terms of Service</Link>
             <Link href={"#"}>Privacy Policy</Link>
           </Stack>
           <Stack align="flex-start">
-            <ListHeader>Get the best deals</ListHeader>
+            <ListHeader>Stay Updated</ListHeader>
             <Stack direction={"row"}>
               <Input
-                placeholder="Your email address"
+                placeholder="Enter your email address"
                 bg="blackAlpha.100"
                 border={0}
                 _focus={{

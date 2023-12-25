@@ -27,6 +27,7 @@ export function DesktopNav() {
             key={navItem.label}
             position="relative"
             display="inline"
+            transition={"all 0.45s"}
             _after={{
               content: '""',
               position: "absolute",
