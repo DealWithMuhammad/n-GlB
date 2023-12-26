@@ -4,6 +4,7 @@ import { navItems } from "@/helpers";
 import { Box, Flex, Stack } from "@chakra-ui/react";
 import Link from "next/link";
 import { AppLogo } from "../AppLogo";
+import { usePathname } from "next/navigation";
 
 export function DesktopNav() {
   return (
@@ -21,34 +22,39 @@ export function DesktopNav() {
           <AppLogo />
         </Box>
 
-        {navItems.map((navItem) => (
-          <Box
-            color={"black"}
-            key={navItem.label}
-            position="relative"
-            display="inline"
-            transition={"all 0.45s"}
-            _after={{
-              content: '""',
-              position: "absolute",
-              left: "50%",
-              bottom: "-2px",
-              width: "0",
-              height: "0.7px",
-              background: "red", // Change this color as needed
-              transition: "all 0.45s",
-            }}
-            _hover={{
-              _after: {
-                width: "100%",
-                left: "0",
-              },
-              color: "red",
-            }}
-          >
-            <Link href={navItem.href}>{navItem.label}</Link>
-          </Box>
-        ))}
+        {navItems.map((navItem) => {
+          const isActive = usePathname() === navItem.href;
+
+          return (
+            <Box
+              color={isActive ? "red" : "black"}
+              borderBottom={isActive ? "2px solid red" : "none"}
+              key={navItem.label}
+              position="relative"
+              display="inline"
+              transition={"all 0.45s"}
+              _after={{
+                content: '""',
+                position: "absolute",
+                left: "50%",
+                bottom: "-2px",
+                width: "0",
+                height: "0.7px",
+                background: "red", // Change this color as needed
+                transition: "all 0.45s",
+              }}
+              _hover={{
+                _after: {
+                  width: "100%",
+                  left: "0",
+                },
+                color: "red",
+              }}
+            >
+              <Link href={navItem.href}>{navItem.label}</Link>
+            </Box>
+          );
+        })}
       </Stack>
     </Flex>
   );
