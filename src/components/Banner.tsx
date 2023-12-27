@@ -1,19 +1,11 @@
 "use client";
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 // bg = 'center / cover no-repeat url(/banner-img1.jpg)';
 
 export const Banner = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
-  }, []);
   return (
     <Box
       background="linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGxlYXJuaW5nfGVufDB8fDB8fHww')"
@@ -32,8 +24,6 @@ export const Banner = () => {
           fontWeight={"800"}
           ml={{ base: "40px", lg: "40px" }}
           mt={{ base: "0px", lg: "50px" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
         >
           Empowering <br /> Education for All
         </Heading>
@@ -42,8 +32,6 @@ export const Banner = () => {
           color={"#fff"}
           fontSize={{ base: "md", lg: "lg" }}
           py="1rem"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
         >
           Providing accessible and innovative learning solutions for refugees of
           all ages.
@@ -58,8 +46,6 @@ export const Banner = () => {
             border={"1px solid"}
             color="white"
             _hover={{ bgColor: "red", border: "0px solid black" }}
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
           >
             Enroll Now
           </Button>
