@@ -24,6 +24,7 @@ export const Banner = () => {
           fontWeight={"800"}
           ml={{ base: "40px", lg: "40px" }}
           mt={{ base: "0px", lg: "50px" }}
+          mr={1}
         >
           Empowering <br /> Education for All
         </Heading>
@@ -32,6 +33,7 @@ export const Banner = () => {
           color={"#fff"}
           fontSize={{ base: "md", lg: "lg" }}
           py="1rem"
+          mr={1}
         >
           Providing accessible and innovative learning solutions for refugees of
           all ages.
@@ -42,6 +44,7 @@ export const Banner = () => {
             borderRadius="0px"
             minW="12rem"
             py={6}
+            mr={1}
             bgColor="transparent"
             border={"1px solid"}
             color="white"
