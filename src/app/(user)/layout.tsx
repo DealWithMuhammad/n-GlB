@@ -3,6 +3,7 @@ import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Footer } from "@src/components/Footer";
 import { Navbar } from "@src/components/Navbar/NavBar";
+import ScrollToTop from "@src/components/ScrollToTop";
 
 import { theme } from "@src/theme";
 import NextTopLoader from "nextjs-toploader";
@@ -25,6 +26,7 @@ export default function RootLayout({
 
             <Navbar />
             {children}
+            <ScrollToTop />
             <Footer />
           </ChakraProvider>
         </CacheProvider>
