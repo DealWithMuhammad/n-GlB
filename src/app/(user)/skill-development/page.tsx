@@ -1,3 +1,4 @@
+"use client";
 import {
   Box,
   Flex,
@@ -48,7 +49,7 @@ function page() {
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >
-            Short Cources
+            Skill Development
           </Heading>
           <Heading
             color={"#fff"}
@@ -60,7 +61,7 @@ function page() {
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >
-            Expand Your Horizons
+            Empowering Refugees with Life Changing Skills
           </Heading>
         </Flex>
       </Box>
