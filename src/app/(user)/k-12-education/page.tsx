@@ -10,9 +10,17 @@ import {
   ListIcon,
   UnorderedList,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Education() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <>
       <Box
@@ -37,6 +45,8 @@ function Education() {
             fontWeight={"800"}
             mt={{ base: "0px", lg: "70px" }}
             textAlign={"center"}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
           >
             GLB Education Online-K12
           </Heading>

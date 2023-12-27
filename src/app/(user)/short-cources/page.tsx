@@ -1,7 +1,15 @@
 import { Flex, Box, Text, Heading, Image, Link } from "@chakra-ui/react";
 import React from "react";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function page() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <>
       <Box
@@ -26,6 +34,8 @@ function page() {
             fontWeight={"800"}
             mt={{ base: "0px", lg: "70px" }}
             textAlign={"center"}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
           >
             Short Cources
           </Heading>
@@ -36,6 +46,8 @@ function page() {
             fontWeight={"400"}
             mt={{ base: "0px", lg: "3px" }}
             textAlign={"center"}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
           >
             Expand Your Horizons
           </Heading>

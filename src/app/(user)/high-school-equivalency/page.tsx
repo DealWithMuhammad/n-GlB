@@ -9,10 +9,18 @@ import {
   Text,
   Link,
 } from "@chakra-ui/react";
-import { Hero } from "@src/components/Hero/Hero";
 import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function page() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <>
       <Box
@@ -37,6 +45,8 @@ function page() {
             fontWeight={"800"}
             mt={{ base: "0px", lg: "70px" }}
             textAlign={"center"}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
           >
             Unlocking Potential
           </Heading>
@@ -47,6 +57,8 @@ function page() {
             fontWeight={"400"}
             mt={{ base: "0px", lg: "3px" }}
             textAlign={"center"}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
           >
             American High School Equivalency for Youth and Adults.
           </Heading>
