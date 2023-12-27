@@ -11,7 +11,7 @@ const ScrollToTop = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Show the button when scrolled down, hide it when at the top
-      setIsVisible(window.scrollY > 5000);
+      setIsVisible(window.scrollY > 200);
     };
 
     // Attach the event listener when the component mounts
