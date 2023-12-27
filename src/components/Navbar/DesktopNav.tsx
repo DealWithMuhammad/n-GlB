@@ -31,7 +31,6 @@ export function DesktopNav() {
               borderBottom={isActive ? "2px solid red" : "none"}
               key={navItem.label}
               position="relative"
-              display="inline"
               transition={"all 0.45s"}
               _after={{
                 content: '""',

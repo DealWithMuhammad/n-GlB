@@ -33,5 +33,6 @@ export const navItems: NavItem[] = [
     label: 'Short Cources',
         href: '/short-cources',
   },
+      
 ];
 

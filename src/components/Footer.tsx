@@ -13,6 +13,8 @@ import {
 import { ReactNode } from "react";
 import { BiMailSend } from "react-icons/bi";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { BsTwitterX, BsFacebook } from "react-icons/bs";
+import { ImLinkedin2 } from "react-icons/im";
 import { AppLogo } from "./AppLogo";
 
 const SocialButton = ({
@@ -57,7 +59,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 
 export const Footer = () => {
   return (
-    <Box bg="pink.50" color="gray.700" mt="2rem">
+    <Box bg="#ebeadf" mt="2rem">
       <Container as={Stack} maxW={"6xl"} py={10}>
         <SimpleGrid
           templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}
@@ -72,13 +74,16 @@ export const Footer = () => {
             </Text>
             <Stack direction="row" spacing={6}>
               <SocialButton label="Twitter" href={"#"}>
-                <FaTwitter />
+                <BsTwitterX fontSize="25" />
               </SocialButton>
               <SocialButton label="Facebook" href={"#"}>
-                <FaFacebook />
+                <BsFacebook fontSize="100" />
               </SocialButton>
               <SocialButton label="Instagram" href={"#"}>
-                <FaInstagram />
+                <FaInstagram fontSize="90" />
+              </SocialButton>
+              <SocialButton label="Linkedin" href={"#"}>
+                <ImLinkedin2 fontSize="90" />
               </SocialButton>
             </Stack>
           </Stack>

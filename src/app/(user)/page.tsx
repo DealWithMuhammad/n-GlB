@@ -196,13 +196,12 @@ export default async function Home() {
           py="2rem"
           w={{ base: "100%", lg: "100%" }}
           justify="space-center"
-          align="center"
           mx="auto"
           flexDir={{ base: "column", md: "row" }}
           my={16}
         >
           <Box
-            mx={{ base: "11", md: "16", lg: "14" }}
+            mx={{ base: "11", md: "16", lg: "0" }}
             position="relative"
             overflow="hidden"
             maxW={{ base: "500px", md: "400px", lg: "600px" }}
@@ -219,17 +218,17 @@ export default async function Home() {
             </Text>
           </Box>
           <Box
-            mx={{ base: "11", md: "16", lg: "14" }}
+            mx={{ base: "11", md: "0", lg: "0" }}
             position="relative"
             overflow="hidden"
             maxW={{ base: "500px", md: "400px", lg: "600px" }}
-            mt={{ base: 10, lg: 0 }}
+            mt={{ base: 10, md: 0, lg: 0 }}
             data-aos="fade-up"
           >
             <Heading letterSpacing={1} size={{ base: "2xl", lg: "3xl" }}>
               Mission
             </Heading>
-            <Text>
+            <Text mt={1}>
               Provide access to educational opportunities for children, youth,
               and adults with limited financial capacity to attain a
               certificate/degree
@@ -251,7 +250,7 @@ export default async function Home() {
           <Flex
             py="2rem"
             w={{ base: "100%", lg: "100%" }}
-            justify="space-center"
+            justify="center"
             align={"center"}
             flexWrap={"wrap"}
             flexDir={{ base: "column", md: "row" }}
